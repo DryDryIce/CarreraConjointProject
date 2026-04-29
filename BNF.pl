@@ -36,6 +36,13 @@ negacion(no_gusta(Objeto)) -->
     verbo_odio,
     objeto(Objeto).
 
+negacion(no_gusta(Objeto)) -->
+    negacion_palabra,
+    pronombre_opcional,
+    verbo_interes,
+    objeto(Objeto).
+
+
 % -------- SUJETO --------
 
 sujeto_opcional --> pronombre.
