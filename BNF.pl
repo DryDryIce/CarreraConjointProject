@@ -2,7 +2,7 @@
 % PARSER BNF (DCG)
 % =========================
 
-% -------- ORACI�N --------
+% -------- ORACIÓN --------
 
 oracion(Resultado) -->
     afirmacion(Resultado).
@@ -94,9 +94,43 @@ objeto(numeros) --> [numeros].
 objeto(comunicacion) --> [hablar].
 objeto(comunicacion) --> [comunicacion].
 
+objeto(sangre) --> articulo_opcional, [sangre].
+objeto(biologia) --> articulo_opcional, [biologia].
+
+objeto(responsabilidad) --> [responsable].
+objeto(paciencia) --> [paciente].
+objeto(comunicacion) --> [comunicativo].
+
+objeto(arte) --> articulo_opcional, [arte].
+objeto(organizacion) --> [organizado].
+objeto(creatividad) --> [creativo].
+
+objeto(optimizacion) --> articulo_opcional, [optimizacion].
+objeto(rutina) --> articulo_opcional, [rutina].
+
+objeto(diseno) --> articulo_opcional, [diseno].
+objeto(diseno) --> articulo_opcional, [diseño].
+
+objeto(numeros) --> articulo_opcional, [numeros].
+
+objeto(detalle) --> [detallista].
+objeto(analisis) --> [analizar].
+
+objeto(leer) --> [leer].
+objeto(justicia) --> articulo_opcional, [justicia].
+objeto(debate) --> articulo_opcional, [debate].
+objeto(argumentar) --> [argumentar].
+
+objeto(construccion) --> articulo_opcional, [construccion].
+objeto(improvisacion) --> articulo_opcional, [improvisar].
+
+objeto(escribir) --> [escribir].
+objeto(investigar) --> articulo_opcional, [investigacion].
+objeto(enseñar) --> [enseñar].
 
 
-% -------- ART�CULOS --------
+
+% -------- ARTÍCULOS --------
 
 articulo_opcional --> [las].
 articulo_opcional --> [los].
@@ -104,7 +138,8 @@ articulo_opcional --> [la].
 articulo_opcional --> [el].
 articulo_opcional --> [].
 
-% -----Frases comunes reales ------
+% -----Frases comunes reales
+ ------
 afirmacion(gusta(X)) -->
     [me, gusta],
     objeto(X).
@@ -118,7 +153,7 @@ negacion(no_gusta(X)) -->
     objeto(X).
 
 % =========================
-% FRASES M�S NATURALES
+% FRASES MÁS NATURALES
 % =========================
 
 % afirmaciones comunes
