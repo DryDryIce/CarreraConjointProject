@@ -9,12 +9,12 @@ profesion(ingenieria_computadores,
     [personas, comunicacion]).
 
 profesion(psicologia,
-    [personas, escuchar, ayudar, empatia],
+    [personas, escuchar, ayudar, organizacion],
     [matematicas, tecnologia]).
 
 profesion(medicina,
-    [personas, ayudar, biologia, responsabilidad],
-    [sangre, tecnologia]).
+    [personas, ayudar, biologia, sangre],
+    [responsabilidad, tecnologia]).
 
 profesion(derecho,
     [argumentar, leer, justicia, debate],
