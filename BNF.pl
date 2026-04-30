@@ -116,7 +116,7 @@ objeto(optimizacion) --> articulo_opcional, [optimizacion].
 objeto(rutina) --> articulo_opcional, [rutina].
 
 objeto(diseno) --> articulo_opcional, [diseno].
-objeto(diseno) --> articulo_opcional, [diseño].
+objeto(diseno) --> articulo_opcional, [disenar].
 
 objeto(numeros) --> articulo_opcional, [numeros].
 
@@ -133,7 +133,7 @@ objeto(improvisacion) --> articulo_opcional, [improvisar].
 
 objeto(escribir) --> [escribir].
 objeto(investigar) --> articulo_opcional, [investigacion].
-objeto(enseñar) --> [enseñar].
+objeto(ensenar) --> [ensenar].
 
 
 
